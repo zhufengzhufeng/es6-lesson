@@ -64,4 +64,3 @@ let date = new Date();
 let str = `${date.getFullYear()}年${(date.getMonth()+1).toString().padEnd(8,0)}月${date.getDate()}`;
 console.log(str);
 
-
