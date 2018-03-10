@@ -12,7 +12,7 @@ function _createClass(con,protoProperty,staticProperty){
         defineProperties(con.prototype,protoProperty);
     }
     if(staticProperty){
-        defineProperties(con,staticProperty)
+        defineProperties(con,staticProperty);
     }
 }
 // 父类
