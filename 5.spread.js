@@ -63,8 +63,9 @@ function deepClone(parent,c){ // {age:1}  {}
     for(var key in parent){
         let current = parent[key];
         if(typeof current === 'object'){ //判断值是否是对象，对象另作处理
-            // {age:{}}
+            //{age:{}}
             child[key] = Object.prototype.toString.call(current)==='[object Array]'?[]:{}
+            // {age:1} {age:{}}
             deepClone(parent[key],child[key])
         }else{ 
             child[key] = parent[key];
